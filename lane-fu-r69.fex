@@ -273,6 +273,7 @@ cooler7 = "240000 1 4294967295 0"
 
 [nand0_para]
 nand_support_2ch = 0
+nand_cache_level = 1
 nand0_used = 0
 nand0_we = port:PC00<2><0><1><default>
 nand0_ale = port:PC01<2><0><1><default>
@@ -694,7 +695,6 @@ pmu_level0 = 11300
 pmu_level1 = 1100
 max_freq = 1200000000
 min_freq = 240000000
-boot_freq = 1008000000
 LV_count = 6
 LV1_freq = 1200000000
 LV1_volt = 1300
