@@ -109,30 +109,30 @@ pll_periph1 = 600
 pll_de = 864
 
 [dram_para]
-dram_clk = 576
+dram_clk = 624
 dram_type = 3
 dram_zq = 0x3b3bfb
 dram_odt_en = 1
-dram_para1 = 284427264
-dram_para2 = 1
-dram_mr0 = 7280
+dram_para1 = 283377664
+dram_para2 = 0
+dram_mr0 = 6208
 dram_mr1 = 64
 dram_mr2 = 24
-dram_mr3 = 0
-dram_tpr0 = 0x47a150
-dram_tpr1 = 0x1c2414b
-dram_tpr2 = 0x65046
+dram_mr3 = 2
+dram_tpr0 = 0x48a192
+dram_tpr1 = 0x1c2418d
+dram_tpr2 = 0x76051
 dram_tpr3 = 0x0
 dram_tpr4 = 0x0
 dram_tpr5 = 0x0
 dram_tpr6 = 0x64
-dram_tpr7 = 0x13890240
+dram_tpr7 = 0x93890240
 dram_tpr8 = 0x0
 dram_tpr9 = 0x0
 dram_tpr10 = 0x0
 dram_tpr11 = 0x6aaa0000
 dram_tpr12 = 0x7979
-dram_tpr13 = 0x1800801
+dram_tpr13 = 0x1802800
 
 [wakeup_src_para]
 cpu_en = 0
@@ -225,9 +225,7 @@ gpio_num = 0
 
 [leds_para]
 leds_used = 1
-green_led = port:PL10<1><default><default><1>
-green_led_active_low = 0
-red_led = port:PA15<1><default><default><0>
+red_led = port:PL10<1><default><default><0>
 red_led_active_low = 0
 
 [ths_para]
@@ -264,7 +262,7 @@ ths_trip2_0 = 105
 
 [cooler_table]
 cooler_count = 8
-cooler0 = "1008000 4 4294967295 0"
+cooler0 = "1200000 4 4294967295 0"
 cooler1 = "912000 4 4294967295 0"
 cooler2 = "768000 4 4294967295 0"
 cooler3 = "648000 4 4294967295 0"
@@ -694,21 +692,21 @@ pmuic_type = 1
 pmu_gpio0 = port:PL06<1><1><2><1>
 pmu_level0 = 11300
 pmu_level1 = 1100
-max_freq = 1008000000
+max_freq = 1200000000
 min_freq = 240000000
 boot_freq = 1008000000
 LV_count = 6
 LV1_freq = 1200000000
 LV1_volt = 1300
 LV2_freq = 1008000000
-LV2_volt = 1200
-LV3_freq = 240000000
-LV3_volt = 1200
-LV4_freq = 0
+LV2_volt = 1300
+LV3_freq = 912000000
+LV3_volt = 1100
+LV4_freq = 648000000
 LV4_volt = 1100
-LV5_freq = 0
+LV5_freq = 480000000
 LV5_volt = 1100
-LV6_freq = 0
+LV6_freq = 240000000
 LV6_volt = 1100
 
 [gpu_dvfs_table]
