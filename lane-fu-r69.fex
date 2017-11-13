@@ -494,10 +494,10 @@ smc_sda = port:PA08<2><default><default><default>
 
 [usbc0]
 usb_used = 1
-usb_port_type = 2
+usb_port_type = 1
 usb_detect_type = 0
-usb_id_gpio = port:PA07<0><1><default><default>
-usb_det_vbus_gpio = port:PA07<0><1><default><default>
+usb_id_gpio =
+usb_det_vbus_gpio =
 usb_drv_vbus_gpio = port:PL02<1><0><default><0>
 usb_host_init_state = 1
 usb_restrict_gpio =
@@ -510,7 +510,7 @@ usb_not_suspend = 0
 
 [usbc1]
 usb_used = 1
-usb_drv_vbus_gpio =
+usb_drv_vbus_gpio = port:PL03<1><0><default><0>
 usb_restrict_gpio =
 usb_host_init_state = 1
 usb_restric_flag = 0
@@ -570,10 +570,10 @@ lpo_use_apclk = "losc_out"
 [wifi_para]
 wifi_used = 1
 wifi_sdc_id = 1
-wifi_usbc_id = 
-wifi_usbc_type = 
-wl_reg_on = port:PL07<1><default><default><0>
-wl_host_wake = port:PG10<0><default><default><0>
+wifi_usbc_id =
+wifi_usbc_type = 1
+wl_reg_on = port:PL00<1><default><default><0>
+wl_host_wake = port:PA11<0><default><default><0>
 wl_host_wake_invert = 0
 
 [bt_para]
